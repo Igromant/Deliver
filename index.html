@@ -4,32 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="css/style.css">
     <title>Deliver</title>
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="preset">
-                <a href="" class="language">English</a>
-                <a href="" class="contact">Contact Center</a> 
-                <a href="" class="country">Country Profile</a>
+            <div class="preset header__present">
+                <div class="container">
+                    <div class="present__block header__present__block">
+                        <select name="language" class="languages">
+                            <option selected value="English">English</option>
+                            <option value="Russian">Russian</option>
+                        </select>
+                        <div class="contacts__profile">
+                            <a href="#" class="contact">Contact Center</a> 
+                            <select name="Country" class="Countries">
+                                <option selected disabled value="English">Country Profile</option>
+                                <option value="Africa">Africa</option>
+                                <option value="America">America</option>
+                                <option value="Asia-Pacific">Asia-Pacific</option>
+                                <option value="Europe">Europe</option>
+                                <option value="Middle East">Middle East</option>
+                                <option value="South Asia">South Asia</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div> 
-            <div class="menu">
-                <a href="" class="logo menu__logo"></a>
-                <!-- /.logo -->
-                    <nav class="nav menu__nav">
-                        <a href="#" class="nav__item">express</a>
-                        <a href="#" class="nav__item">parcel & econommerce</a>
-                        <a href="#" class="nav__item">logistics</a>
-                        <a href="#" class="nav__item">mail</a>
-                        <a href="#" class="nav__item">press</a>
-                        <a href="#" class="nav__item">about</a>
-                    </nav>
+            <div class="menu header__menu">
+                <div class="container">
+                    <div class="menu__block header__menu__block">
+                        <a href="" class="logo menu__logo"><img src="./matirial/PSD/img/dhl_logo.jpg" alt="logotipe"></a>
+                    <!-- /.logo -->
+                        <nav class="nav menu__nav">
+                            <a href="#" class="nav__item">express</a>
+                            <a href="#" class="nav__item">parcel & econommerce</a>
+                            <a href="#" class="nav__item">logistics</a>
+                            <a href="#" class="nav__item">mail</a>
+                            <a href="#" class="nav__item">press</a>
+                            <a href="#" class="nav__item">about</a>
+                        </nav>   
+                    </div>     
+                </div>
+        <!-- /.container -->
             </div>
             <!-- /.menu -->
-        </div>
-        <!-- /.container -->
     </header>
     <!-- /.header -->
 </body>
