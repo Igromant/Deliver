@@ -1,0 +1,22 @@
+{
+  "name": "deliver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Igromant/Deliver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Igromant/Deliver/issues"
+  },
+  "homepage": "https://github.com/Igromant/Deliver#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
