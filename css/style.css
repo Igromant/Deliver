@@ -10,6 +10,14 @@
   font-family: 'Poppins-Regular';
   src: url("../matirial/PSD/fonts/Poppins-Regular.ttf"); }
 
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url("../matirial/PSD/fonts/Poppins-Light.ttf"); }
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url("../matirial/PSD/fonts/Poppins-SemiBold.ttf"); }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -334,7 +342,27 @@ template {
     width: 16px;
     height: 16px;
     background: url("../matirial/PSD/img/multiple-users-silhouette.svg") no-repeat center/cover;
-    fill: #ffff; }
+    filter: invert(100%);
+    margin-right: 10px; }
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer; }
+  .button__icon {
+    box-shadow: 0px 10px 18px rgba(186, 0, 0, 0.4);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #ba0000;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.search {
+  width: 16px;
+  height: 16px;
+  filter: invert(100%); }
 
 .container {
   max-width: 1920px;
@@ -345,11 +373,18 @@ template {
   box-sizing: border-box; }
 
 html {
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 24px; }
 
 body {
   font-family: 'Poppins-Regular', sans-serif;
   font-size: 1rem; }
+
+h1 {
+  font-family: 'Poppins-SemiBold'; }
+
+h2 {
+  font-family: 'Poppins-Medium'; }
 
 .header__present {
   height: 50px;
@@ -363,4 +398,47 @@ body {
 
 .header__menu {
   height: 120px;
-  background-color: #ffcc00; }
+  background-color: #ffcc00;
+  display: flex;
+  align-items: center; }
+  .header__menu__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.contact__prof {
+  display: flex;
+  align-items: center;
+  width: 287px;
+  justify-content: space-between; }
+
+.nav__item {
+  text-decoration: none;
+  color: #ba0000;
+  text-transform: uppercase;
+  padding: 45px 17px; }
+  .nav__item:hover {
+    border-bottom: 4px solid #ba0000;
+    font-family: 'Poppins-Bold';
+    padding: 44px 14px; }
+
+.promo {
+  background: linear-gradient(45deg, #ba0000 15%, transparent 85%), url("../matirial/PSD/img/promo-bg.jpg") no-repeat center/cover;
+  padding: 180px 0px; }
+  .promo__title {
+    font-size: 70px;
+    line-height: 80px;
+    color: #ffff;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column; }
+    .promo__title::after {
+      content: '';
+      background-color: #ffcc00;
+      width: 100px;
+      height: 4px;
+      margin-top: 40px; }
+  .promo__text {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffcc00; }
