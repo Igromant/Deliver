@@ -1,0 +1,44 @@
+.card
+    &__text
+        margin: 0 auto
+        font-size: 16px
+        line-height: 26px
+    &__title
+        font-size: 20px
+        line-height: 30px
+        text-transform: uppercase
+        color: $orange
+        &__location
+            color: $light
+            text-transform: none
+            display: flex
+            flex-direction: column
+            &::after
+                content: ''
+                width: 70px
+                height: 2px
+                background-color: $yellow
+                margin: 30px 0px
+    &__content
+        color: $grey
+        max-width: 264px
+        width: 100%
+        &__location
+            color: $light
+    &__read
+        text-decoration: none
+        font-family: 'Poppins-Bold'
+        color: $dark
+        display: flex
+        align-items: center
+        max-width: 115px
+        width: 100%
+        &::after
+            content: ''
+            width: 12px
+            height: 12px
+            background:  url('../matirial/PSD/img/right-arrow.svg') no-repeat center / cover 
+            margin-left: 12px
+    &__location
+        padding: 30px
+        background-color: $orange
