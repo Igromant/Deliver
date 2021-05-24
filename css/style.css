@@ -342,7 +342,6 @@ template {
     width: 16px;
     height: 16px;
     background: url("../matirial/PSD/img/multiple-users-silhouette.svg") no-repeat center/cover;
-    filter: invert(100%);
     margin-right: 10px; }
 
 .button {
@@ -373,19 +372,25 @@ template {
     display: flex;
     align-items: center;
     justify-content: center; }
+  .button__service {
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    background: #ffcc00 url("../matirial/PSD/img/play.svg") no-repeat center;
+    display: flex;
+    margin: auto;
+    margin-top: 50px; }
   .button__arrow__down {
     width: 50px;
     height: 50px;
-    background-color: #ffcc00;
+    background: #ffcc00 url("../matirial/PSD/img/arrow-down.svg") no-repeat center;
     position: absolute;
     margin-top: -50px;
-    margin-left: 160px;
-    overflow: hidden; }
+    margin-left: 160px; }
 
 .search {
   width: 16px;
-  height: 16px;
-  filter: invert(100%); }
+  height: 16px; }
 
 .location {
   outline: none;
@@ -412,8 +417,9 @@ template {
 .col-20 {
   flex-basis: 20%; }
 
-.col-20 {
-  flex-basis: 20%; }
+.col-30 {
+  flex-basis: 28%;
+  background-color: #ffff; }
 
 .card__text {
   margin: 0 auto;
@@ -435,7 +441,7 @@ template {
       width: 70px;
       height: 2px;
       background-color: #ffcc00;
-      margin: 30px 0px; }
+      margin: 30px 0px 14px 0px; }
 
 .card__content {
   color: #808080;
@@ -456,12 +462,15 @@ template {
     content: '';
     width: 12px;
     height: 12px;
-    background: url("../matirial/PSD/img/right-arrow.svg") no-repeat center/cover;
-    margin-left: 12px; }
+    background: url("../matirial/PSD/img/arrow-right.svg") no-repeat center/cover;
+    margin-left: 8px; }
 
 .card__location {
-  padding: 30px;
+  padding: 14px 30px 30px 30px;
   background-color: #ba0000; }
+
+.select--location {
+  margin-top: 39px; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -572,3 +581,18 @@ h2 {
     line-height: 80px;
     color: #f8f8f8;
     z-index: -10; }
+
+.awesome__button {
+  padding: 10px 48px;
+  border-radius: 50px;
+  margin-top: 20px; }
+
+.awesome__row {
+  margin-top: 79px; }
+
+.service {
+  background: linear-gradient(to top, rgba(255, 204, 0, 0.7), rgba(186, 0, 0, 0.7), transparent), url("../matirial/PSD/img/service-bg.jpg") no-repeat center/cover;
+  padding: 150px 0; }
+  .service__section__title {
+    color: #ffff;
+    text-align: center; }
