@@ -84,6 +84,7 @@
     width: 210px
     height: 50px
     appearance: none
+    cursor: pointer
 .sponsorship
     display: flex
     justify-content: space-between
@@ -92,16 +93,38 @@
 .sponsor
     width: 269.96px
     height: 129px
-    background-color: $grey-light
     border: 1px solid rgba($orange , 0.2)
     display: flex
     align-items: center
     justify-content: center
-    filter: lin
+    &__bg
+        background:  $grey-light
+    &__logo1
+        width: 234px
+        height: 54px
+        background: $grey-light url("../matirial/PSD/img/themeforest-light-background.jpg") no-repeat center / 234px
+        filter: grayscale(100%)
+        background-blend-mode: multiply
+    &__logo2
+        width: 234px
+        height: 54px
+        background: $grey-light url("../matirial/PSD/img/photodune-light-background.jpg") no-repeat center / 234px
+        filter: grayscale(100%)
+        background-blend-mode: multiply
+    &__logo3
+        width: 234px
+        height: 54px
+        background: $grey-light url("../matirial/PSD/img/graphicriver-light-background.jpg") no-repeat center / 234px
+        filter: grayscale(100%)
+        background-blend-mode: multiply
+    &__logo4
+        width: 234px
+        height: 54px
+        background: $grey-light url("../matirial/PSD/img/codecanyon-light-background.jpg") no-repeat center / 234px
+        filter: grayscale(100%)
+        background-blend-mode: multiply
     &:hover
         border: 1px solid $orange 
-    &>img
-        width: 234px
-
+    
         
 

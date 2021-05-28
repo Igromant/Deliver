@@ -8,15 +8,15 @@
         width: 50%
     &__secondary
         margin: 0
-        padding: 20px 96px
-        letter-spacing: 3px
+        padding: 20px 0px
+        letter-spacing: 2px
         text-align: center
         background-color: $orange
         color: $light
         text-transform: uppercase
     &__primary
         margin: 0
-        padding: 20px 96px
+        padding: 20px 0px
         text-align: center
         letter-spacing: 3px
         background-color: $yellow
@@ -28,22 +28,48 @@
             box-shadow: none
 .page
     &__secondary
+        padding-top: 20px
         width: 100%
         height: auto
         background-color: $orange
+        display: flex
+        flex-direction: column
+        padding-left: 7.5%
+        padding-right: 7.5%
     &__primary
         display: none
-.cheklist
-    width: 90%
+.checklist
+    margin: 0
+    padding: 0
+    margin-top: 20px
+    margin-bottom: 20px
+    width: 88%
+    height: 50px
+    background: transparent
+    display: flex
+    justify-content: flex-end
+    align-items: center
     &__title
-        margin: 0
-        padding: 0
+        cursor: pointer
+        font-family: 'Poppins-Light'
         color: $light
         text-transform: uppercase
-        
-        height: 5%
-        border: 1px solid $light
+        border: 2px solid $light
+        text-align: center
         &::after
+            position: absolute
             content: ''
             width: 50px
             height: 50px
+            border: 2px solid $light
+            margin-right: -50px
+            background: url('../matirial/PSD/img/arrow-down-white.svg')  no-repeat center 
+.our-company
+    display: flex
+    justify-content: flex-end
+    &::after
+        position: absolute
+        content: ''
+        height: 499px
+        width: 434px
+        background: url('../matirial/PSD/img')  no-repeat center 

@@ -414,7 +414,8 @@ template {
   height: 50px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; }
+  appearance: none;
+  cursor: pointer; }
 
 .sponsorship {
   display: flex;
@@ -425,16 +426,38 @@ template {
 .sponsor {
   width: 269.96px;
   height: 129px;
-  background-color: #f8f8f8;
   border: 1px solid rgba(186, 0, 0, 0.2);
   display: flex;
   align-items: center;
-  justify-content: center;
-  filter: lin; }
+  justify-content: center; }
+  .sponsor__bg {
+    background: #f8f8f8; }
+  .sponsor__logo1 {
+    width: 234px;
+    height: 54px;
+    background: #f8f8f8 url("../matirial/PSD/img/themeforest-light-background.jpg") no-repeat center/234px;
+    filter: grayscale(100%);
+    background-blend-mode: multiply; }
+  .sponsor__logo2 {
+    width: 234px;
+    height: 54px;
+    background: #f8f8f8 url("../matirial/PSD/img/photodune-light-background.jpg") no-repeat center/234px;
+    filter: grayscale(100%);
+    background-blend-mode: multiply; }
+  .sponsor__logo3 {
+    width: 234px;
+    height: 54px;
+    background: #f8f8f8 url("../matirial/PSD/img/graphicriver-light-background.jpg") no-repeat center/234px;
+    filter: grayscale(100%);
+    background-blend-mode: multiply; }
+  .sponsor__logo4 {
+    width: 234px;
+    height: 54px;
+    background: #f8f8f8 url("../matirial/PSD/img/codecanyon-light-background.jpg") no-repeat center/234px;
+    filter: grayscale(100%);
+    background-blend-mode: multiply; }
   .sponsor:hover {
     border: 1px solid #ba0000; }
-  .sponsor > img {
-    width: 234px; }
 
 .container {
   max-width: 1920px;
@@ -674,15 +697,15 @@ h2 {
     width: 50%; }
   .tabs__secondary {
     margin: 0;
-    padding: 20px 96px;
-    letter-spacing: 3px;
+    padding: 20px 0px;
+    letter-spacing: 2px;
     text-align: center;
     background-color: #ba0000;
     color: #ffff;
     text-transform: uppercase; }
   .tabs__primary {
     margin: 0;
-    padding: 20px 96px;
+    padding: 20px 0px;
     text-align: center;
     letter-spacing: 3px;
     background-color: #ffcc00;
@@ -694,26 +717,54 @@ h2 {
       box-shadow: none; }
 
 .page__secondary {
+  padding-top: 20px;
   width: 100%;
   height: auto;
-  background-color: #ba0000; }
+  background-color: #ba0000;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7.5%;
+  padding-right: 7.5%; }
 
 .page__primary {
   display: none; }
 
-.cheklist {
-  width: 90%; }
-  .cheklist__title {
-    margin: 0;
-    padding: 0;
+.checklist {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 88%;
+  height: 50px;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .checklist__title {
+    cursor: pointer;
+    font-family: 'Poppins-Light';
     color: #ffff;
     text-transform: uppercase;
-    height: 5%;
-    border: 1px solid #ffff; }
-    .cheklist__title::after {
+    border: 2px solid #ffff;
+    text-align: center; }
+    .checklist__title::after {
+      position: absolute;
       content: '';
       width: 50px;
-      height: 50px; }
+      height: 50px;
+      border: 2px solid #ffff;
+      margin-right: -50px;
+      background: url("../matirial/PSD/img/arrow-down-white.svg") no-repeat center; }
+
+.our-company {
+  display: flex;
+  justify-content: flex-end; }
+  .our-company::after {
+    position: absolute;
+    content: '';
+    height: 499px;
+    width: 434px;
+    background: url("../matirial/PSD/img") no-repeat center; }
 
 .excellence {
   background-color: #ba0000; }
